@@ -12,6 +12,7 @@
   --bgr-color: #2f303a;
   --logo-dark-color: #000000;
   --btn-color: #f5f4fa;
+  --icon-color: #afb1b8;
 }
 
 /* Сбросы */
@@ -184,10 +185,15 @@ body {
 
 .hero-section {
   text-align: center;
-  background: var(--bgr-color);
+  background-color: #c4c4c4;
+  background-image: url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1200px;
+  margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
-
 }
 
 .hero-title {
@@ -217,19 +223,16 @@ body {
   text-transform: uppercase;
 }
 .peculiarities-second-text {
-
-font-size: 14px;
-font-style: normal;
-line-height: 1.71;
-text-align: left;
-
-
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+  text-align: left;
 }
 
 /*--------------Работа--------------*/
 
 .section-work {
-    padding-top: 0;
+  padding-top: 0;
 }
 .section-title {
   margin-top: 0;
@@ -248,7 +251,7 @@ text-align: left;
 /*------------ Наша команда -------------*/
 
 .section-team {
-    background: var(--btn-color);
+  background: var(--btn-color);
 }
 .team-list .title {
   color: var(--title-text-color);
@@ -268,18 +271,49 @@ text-align: left;
 .team-item {
   flex-basis: calc((100% - 3 * 30px) / 3);
   margin-left: 30px;
-  
+}
+.team-second-text {
+  margin-bottom: 16px;
 }
 
-
 .team-text {
- padding-top: 30px;
- padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-title {
   margin-bottom: 10px;
 }
+.team-list-item {
+  display: flex;
+  justify-content: center;
+}
+.social-item {
+  margin-right: 10px;
+}
+.social-item:last-child {
+  margin-right: 0;
+}
 
+.social-link {
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: var(--title-white-color);
+
+  display: flex;
+}
+.social-icon {
+  fill: var(--icon-color);
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--title-white-color);
+}
 /* button */
 .hero-button {
   border-radius: 4px;
@@ -290,11 +324,11 @@ text-align: left;
   color: var(--title-white-color);
   background: var(--accent-color);
   font-family: inherit;
-  font-size: 16px; 
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
-   border: none;
+  border: none;
   cursor: pointer;
 }
 
@@ -322,14 +356,12 @@ text-align: left;
 
 /*------------- Futer---------------- */
 
-
 .futer {
   background-color: var(--bgr-color);
   padding: 60px 0;
-
 }
 .futer-logo {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .futer .address {
   color: var(--title-white-color);
@@ -349,25 +381,20 @@ text-align: left;
   text-align: left;
 }
 
-
 .futer-inf-mail {
-    display: block;
+  display: block;
   margin-bottom: 9px;
 }
 .futer-inf-tel {
-    display: block;
- 
+  display: block;
 }
-
-
 
 /*--------------- Portfolio ------------*/
 
 /*----------- Button ---------*/
 .btn {
-    padding: 6px 22px;
-    border: none;
-    
+  padding: 6px 22px;
+  border: none;
 }
 
 .btn-item {
@@ -379,7 +406,6 @@ text-align: left;
   border-radius: 4px;
   padding-right: 8px;
   padding-bottom: 16px;
-  
 }
 
 .btn-item:last-child {
@@ -418,13 +444,11 @@ text-align: left;
   margin-top: -30px;
 }
 .example-item {
-    margin-left: 30px;
-    margin-top: 30px;
-    flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 90px) / 3);
 }
 
-
 .main-example-text {
-    margin: 20px 24px;
-
+  margin: 20px 24px;
 }
