@@ -179,23 +179,31 @@ body {
   display: flex;
   align-items: center;
 }
-.contact-mail::before {
-  content: "";
+.inf-icon {
   width: 16px;
   height: 12px;
   fill: var(--primary-text-color);
-  background-image: url(../images/icons.svg#icon-envelope);
   margin-right: 6px;
 }
 
-.contact-mail:hover::before,
-.contact-mail:focus::before {
+.inf-icon:hover,
+.inf-icon:focus {
   fill: var(--accent-color);
 }
 
 .contact:hover,
 .contact:focus {
   color: var(--accent-color);
+}
+.tel-icon {
+  height: 16px;
+  width: 10px;
+  margin-right: 6px;
+  fill: var(--primary-text-color);
+}
+.tel-icon:hover,
+.tel-icon:focus {
+  fill: var(--accent-color);
 }
 
 /*-----------------HERO--------------- */
@@ -349,17 +357,24 @@ body {
 .clients-list {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .clients-item {
- 
   margin-right: 30px;
+  border: 1px solid var(--icon-color);
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 .clients {
-  width: 140px;height: 135px;
+  width: 140px;
+  height: 135px;
 }
-.clients-item {
-  width: 30px;
-  height: 30px;
+.clients-icon {
+  fill: var(--icon-color);
+}
+.clients-icon:hover,
+.clients-icon:focus {
+  fill: var(--accent-color);
 }
 
 /* button */
@@ -440,50 +455,52 @@ body {
   display: flex;
   align-items: center;
 }
+.futer-left {
+  margin-right: 70px;
+}
+
+.futer-right-title {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: left;
+  color: var(--title-white-color);
+  margin-bottom: 20px;
+}
+
+.futer-right-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .futer-right-list-icon {
-visibility: 44px;
-height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   align-items: center;
   justify-content: center;
   display: flex;
-  
+  width: 44px;
+  height: 44px;
 }
 
-
-
-.futer-left {
-  margin-right: 70px;
+.futer-right-list-icon:hover,
+.futer-right-list-icon:focus {
+  background-color: var(--accent-color);
 }
-.futer-right-title {
-font-size: 14px;
-line-height: calc(16 / 14);
-text-align: left;
-color: var(--title-white-color);
-margin-bottom: 20px;
-}
+
 .futer-icon {
   fill: var(--title-white-color);
-  width: 20px;
-  height: 20px;
-  align-items: center;
-  justify-content:center;
-  margin: 20px;
-  
 
-}
-.futer-right-list {
-  display: flex;
+  align-items: center;
   justify-content: center;
 }
-.futer-right-list:not(:last-child) {
-  margin-right: 10px;
-}
-.futer-right-list-icon:hover, .futer-right-list-icon:focus {
-  background-color:var(--accent-color);
+.futer-right-item {
+  width: 44px;
+  height: 44px;
 }
 
+.futer-right-item:not(:last-child) {
+  margin-right: 10px;
+}
 
 /*--------------- Portfolio ------------*/
 
