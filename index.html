@@ -36,7 +36,7 @@
         </nav>
         <ul class="information-list">
           <li>
-            <a href="mailto:info@devstudio.com" class="contact"
+            <a href="mailto:info@devstudio.com" class="contact contact-mail"
               >info@devstudio.com</a
             >
           </li>
@@ -62,9 +62,13 @@
       <section class="section-pecul section">
         <div class="container">
           <h2 class="visually-hidden">Особенности</h2>
-
           <ul class="peculiarities-list list">
             <li class="pecul-item">
+              <div class="icon">
+                <svg class="pecul-icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-antenna-1"></use>
+                </svg>
+              </div>
               <h3 class="pecul-title title-text">Внимание к деталям</h3>
               <p class="peculiarities-second-text">
                 Идейные соображения, а также начало повседневной работы по
@@ -72,6 +76,11 @@
               </p>
             </li>
             <li class="pecul-item">
+              <div class="icon">
+                <svg class="pecul-icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-clock-1"></use>
+                </svg>
+              </div>
               <h3 class="pecul-title title-text">Пунктуальность</h3>
               <p class="peculiarities-second-text">
                 Задача организации, в особенности же рамки и место обучения
@@ -79,6 +88,11 @@
               </p>
             </li>
             <li class="pecul-item">
+              <div class="icon">
+                <svg class="pecul-icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-diagram-1"></use>
+                </svg>
+              </div>
               <h3 class="pecul-title title-text">Планирование</h3>
               <p class="peculiarities-second-text">
                 Равным образом консультация с широким активом в значительной
@@ -86,6 +100,11 @@
               </p>
             </li>
             <li class="pecul-item">
+              <div class="icon">
+                <svg class="pecul-icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-astronaut-1"></use>
+                </svg>
+              </div>
               <h3 class="pecul-title title-text">Современные технологии</h3>
               <p class="peculiarities-second-text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -306,12 +325,43 @@
           </ul>
         </div>
       </section>
+
+      <!--Clients-->
+      -->
+
+      <section>
+        <div class="container">
+          <h2 class="section-title section-title-clients">
+            Постоянные клиенты
+          </h2>
+          <ul class="clients-list">
+            <li class="clients-item">
+              <div class="clients">
+                <svg clients-icon>
+                  <use href="./image/icons.svg#icon-diagram-1"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="clients-item">
+              <svg clients-icon>
+                <use href="./image/icons.svg#icon-diagram-1"></use>
+              </svg>
+            </li>
+            <li class="clients-item">
+              <svg clients-icon>
+                <use href="./image/icons.svg#icon-diagram-1"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <!--Футер-->
 
     <footer class="futer">
-      <div class="container">
+      <div class="container futer-container">
+        <div class="futer-left">
         <a href="/" class="logo futer-logo">
           Web<span class="accent-white">Studio</span>
         </a>
@@ -322,6 +372,32 @@
             <li><a href="" class="inf futer-inf-tel">+38 099 111 11 11</a></li>
           </ul>
         </address>
+      </div>
+      <div class="futer-right">
+        <h2 class="futer-right-title">присоединяйтесь</h2>  
+        <ul class="futer-right-list">
+          <li class="futer-right-list">
+              <svg class="social-icon-futer" width="20" height="20">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+          </li>
+          <li class="futer-right-list">
+            <svg class="social-icon-futer" width="20" height="20">
+              <use href="./images/icons.svg#icon-twitter-1"></use>
+            </svg>
+        </li>
+        <li class="futer-right-list">
+          <svg class="social-icon-futer" width="20" height="20">
+            <use href="./images/icons.svg#icon-facebook-1"></use>
+          </svg>
+      </li>
+      <li class="futer-right-list">
+        <svg class="social-icon-futer" width="20" height="20">
+          <use href="./images/icons.svg#icon-linkedin-1"></use>
+        </svg>
+    </li>
+        </ul>
+      </div>
       </div>
     </footer>
   </body>

@@ -175,6 +175,23 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.contact-mail {
+  display: flex;
+  align-items: center;
+}
+.contact-mail::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  fill: var(--primary-text-color);
+  background-image: url(../images/icons.svg#icon-envelope);
+  margin-right: 6px;
+}
+
+.contact-mail:hover::before,
+.contact-mail:focus::before {
+  fill: var(--accent-color);
+}
 
 .contact:hover,
 .contact:focus {
@@ -227,6 +244,18 @@ body {
   font-style: normal;
   line-height: 1.71;
   text-align: left;
+}
+.pecul-icon {
+  align-items: center;
+}
+.icon {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
 /*--------------Работа--------------*/
@@ -314,6 +343,25 @@ body {
 .social-link:focus .social-icon {
   fill: var(--title-white-color);
 }
+
+/*------------ Clients -------------*/
+
+.clients-list {
+  display: flex;
+  align-items: center;
+}
+.clients-item {
+ 
+  margin-right: 30px;
+}
+.clients {
+  width: 140px;height: 135px;
+}
+.clients-item {
+  width: 30px;
+  height: 30px;
+}
+
 /* button */
 .hero-button {
   border-radius: 4px;
@@ -388,6 +436,39 @@ body {
 .futer-inf-tel {
   display: block;
 }
+.futer-container {
+  display: flex;
+  align-items: center;
+}
+.futer-right-list {
+  display: flex;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  justify-content: center;
+  flex-shrink: 1;
+}
+.futer-right-list:not(:last-child) {
+  margin-right: 10px;
+}
+.futer-left {
+  margin-right: 70px;
+}
+.futer-right-title {
+font-size: 14px;
+line-height: calc(16 / 14);
+text-align: left;
+color: var(--title-white-color);
+margin-bottom: 20px;
+}
+.social-icon-futer {
+  fill: var(--title-white-color);
+  width: 20px;height: 20px;
+
+}
+
 
 /*--------------- Portfolio ------------*/
 
